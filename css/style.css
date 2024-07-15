@@ -170,7 +170,8 @@ figure {
 }
 
 .container {
-  max-width: 1430px;
+  max-width: 78%;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 767px) {

@@ -4,18 +4,9 @@
     <title>Antomi - Electronics eCommerce HTML Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-    <!-- CSS 
-    ========================= -->
-
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="css/plugins.css">
-
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/plugins.css">
+    <link rel="stylesheet" href="/css/style.css?<?=time();?>">
 </head>
 
 <body>

@@ -1,4 +1,4 @@
-<?php require("include/head.php"); ?>
+<?php require("database.php"); ?>
 <!DOCTYPE html>
 <html class="no-js" lang="vi">
 <head>

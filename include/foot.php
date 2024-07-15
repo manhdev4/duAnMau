@@ -257,21 +257,8 @@
             </div>
         </div>
     </div>
-    <!-- modal area end-->
 
-
-
-    <!-- JS
-============================================ -->
-
-    <!-- Plugins JS -->
-    <script src="js/plugins.js"></script>
-
-    <!-- Main JS -->
-    <script src="js/main.js"></script>
-
-
-
-
-
-</body></html>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/main.js?<?=time();?>"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 <?php require("include/head.php"); ?>
 <?php require("include/nav.php"); ?>
+
 <section class="slider_section slider_s_two mb-60 mt-20">
     <div class="container">
         <div class="row">

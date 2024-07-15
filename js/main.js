@@ -680,8 +680,8 @@
 
 		e.preventDefault();
 		$(".categories_menu_toggle li.hidden").toggle(500);
-		var htmlAfter = '<i class="fa fa-minus" aria-hidden="true"></i> Less Categories';
-		var htmlBefore = '<i class="fa fa-plus" aria-hidden="true"></i> More Categories';
+		var htmlAfter = '<i class="fa fa-minus" aria-hidden="true"></i> Thu Gọn';
+		var htmlBefore = '<i class="fa fa-plus" aria-hidden="true"></i> Xem Thêm';
 
 
 		if ($(this).html() == htmlBefore) {

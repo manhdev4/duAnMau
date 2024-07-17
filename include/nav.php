@@ -201,18 +201,21 @@
                                 <div class="categories_title">
                                     <h2 class="categori_toggle t-b">DANH MỤC</h2>
                                 </div>
-                                <div class="categories_menu_toggle">
+                                <div class="categories_menu_toggle" <?php if($_SERVER['REQUEST_URI'] !== "/") { echo 'style="display: none;"'; } ?>>
                                     <ul>
-                                        <li class="menu_item_children"><a href="#">Brake Parts <i class="fa fa-angle-right"></i></a>
+                                        <li class="menu_item_children"><a href="#">Điện Thoại <i class="fa fa-angle-right"></i></a>
                                             <ul class="categories_mega_menu">
-                                                <li class="menu_item_children"><a href="#">Handbags</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="">Shoulder</a></li>
-                                                        <li><a href="">Satchels</a></li>
-                                                        <li><a href="">kids</a></li>
-                                                        <li><a href="">coats</a></li>
-                                                    </ul>
-                                                </li>
+                                                <li class="menu_item_children"><a href="#">Iphone</a></li>
+                                                <li class="menu_item_children"><a href="#">SamSung</a></li>
+                                                <li class="menu_item_children"><a href="#">Vivo</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu_item_children"><a href="#">Phụ Kiện <i class="fa fa-angle-right"></i></a>
+                                            <ul class="categories_mega_menu">
+                                                <li class="menu_item_children"><a href="#">Sạc</a></li>
+                                                <li class="menu_item_children"><a href="#">Tai Nghe</a></li>
+                                                <li class="menu_item_children"><a href="#">Ốp Lưng</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#" id="more-btn"><i class="fa fa-plus" aria-hidden="true"></i> Xem Thêm</a></li>
@@ -220,48 +223,29 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="column2 col-lg-6 ">
+                        <div class="col-md-7">
                             <div class="search_container">
-                                <form action="#">
+                                <form action="/pages/search.php" method="POST">
                                     <div class="hover_category">
-                                        <select class="select_option" name="select" id="categori2">
-                                            <option selected="" value="1">All Categories</option>
-                                            <option value="2">Accessories</option>
-                                            <option value="3">Accessories &amp; More</option>
-                                            <option value="4">Butters &amp; Eggs</option>
-                                            <option value="5">Camera &amp; Video </option>
-                                            <option value="6">Mornitors</option>
-                                            <option value="7">Tablets</option>
-                                            <option value="8">Laptops</option>
-                                            <option value="9">Handbags</option>
-                                            <option value="10">Headphone &amp; Speaker</option>
-                                            <option value="11">Herbs &amp; botanicals</option>
-                                            <option value="12">Vegetables</option>
-                                            <option value="13">Shop</option>
-                                            <option value="14">Laptops &amp; Desktops</option>
-                                            <option value="15">Watchs</option>
-                                            <option value="16">Electronic</option>
-                                        </select>
+                                        <div class="manhcon-search">
+                                            <i class="fas fa-search"></i>
+                                        </div>
                                     </div>
                                     <div class="search_box">
-                                        <input placeholder="Search product..." type="text">
-                                        <button type="submit">Search</button>
+                                        <input placeholder="Tìm kiếm sản phẩm..." name="q" type="text">
+                                        <button type="submit">Tìm kiếm</button>
                                     </div>
                                 </form>
                             </div>
 
                         </div>
-                        <div class="column3 col-lg-3 col-md-6">
+                        <div class="col-md-2">
                             <div class="header_bigsale">
-                                <a href="#">BIG SALE BLACK FRIDAY</a>
+                                <a href="#">TÀI KHOẢN</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--header bottom end-->
             </div>
         </div>
     </header>
-    <!--header area end-->
-
-    <!--slider area start-->

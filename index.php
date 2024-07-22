@@ -76,35 +76,38 @@
         </div>
     </div>
 
+    <?php foreach($ManhDev->get_list("SELECT * FROM `categories` ORDER BY `id` DESC ") as $categorie): ?>
     <div class="product_area">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="product_header">
                         <div class="section_title">
-                            <h2>Sản Phẩm Mới</h2>
+                            <h2><?=$categorie['name'];?></h2>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="product_carousel product_style product_column5 owl-carousel">
-
+            <?php foreach($ManhDev->get_list("SELECT * FROM `product` WHERE `codeCate` = '".$categorie['code']."' ORDER BY `id` DESC ") as $product): ?>
                 <article class="single_product">
-                    <figure>
+                    <figure onclick="href('/pages/product.php?code=<?=$product['code'];?>')">
                         <div class="product_thumb">
-                            <a class="primary_img" href="product-details.html"><img src="images/product1.jpg" alt=""></a>
-                            <a class="secondary_img" href="product-details.html"><img src="images/product2_1.jpg" alt=""></a>
+                            <a class="primary_img"><img src="<?=$product['image'];?>" alt=""></a>
+                            <?php foreach($ManhDev->get_list("SELECT * FROM `images` WHERE `code` = '".$product['code']."' ORDER BY `id` DESC ") as $images): ?>
+                            <a class="secondary_img"><img src="<?=$images['path'];?>" alt="<?=$product['name'];?>"></a>
+                            <?php endforeach; ?>
                             <div class="label_product">
                                 <span class="label_new">New</span>
                             </div>
                         </div>
                         <div class="product_content">
                             <div class="product_content_inner">
-                                <h4 class="product_name"><a href="product-details.html">Tên Sản Phẩm 1</a></h4>
+                                <h4 class="product_name"><a><?=$product['name'];?></a></h4>
                                 <div class="price_box">
-                                    <span class="old_price">Giá cũ</span>
-                                    <span class="current_price">Giá giảm</span>
+                                    <span class="old_price"><?=tien($product['money']);?>đ</span>
+                                    <span class="current_price"><?=tien($product['money']);?>đ</span>
                                 </div>
                             </div>
                             <div class="add_to_cart">
@@ -113,52 +116,11 @@
                         </div>
                     </figure>
                 </article>
-
+            <?php endforeach; ?>
             </div>
         </div>
     </div>
-
-    <div class="product_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="product_header">
-                        <div class="section_title">
-                            <h2>Sản Phẩm Mới</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product_carousel product_style product_column5 owl-carousel">
-
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details.html"><img src="images/product1.jpg" alt=""></a>
-                            <a class="secondary_img" href="product-details.html"><img src="images/product2_1.jpg" alt=""></a>
-                            <div class="label_product">
-                                <span class="label_new">New</span>
-                            </div>
-                        </div>
-                        <div class="product_content">
-                            <div class="product_content_inner">
-                                <h4 class="product_name"><a href="product-details.html">Tên Sản Phẩm 1</a></h4>
-                                <div class="price_box">
-                                    <span class="old_price">Giá cũ</span>
-                                    <span class="current_price">Giá giảm</span>
-                                </div>
-                            </div>
-                            <div class="add_to_cart">
-                                <button type="button" onclick="addCart();" title="Thêm Vào Giỏ">Thêm Vào Giỏ</button>
-                            </div>
-                        </div>
-                    </figure>
-                </article>
-
-            </div>
-        </div>
-    </div>
+    <?php endforeach; ?>
     
     <!--banner area start-->
     <div class="banner_area banner_style2 mb-55">

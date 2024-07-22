@@ -127,7 +127,16 @@
             </div>
         </div>
     </footer>
-
+<style>
+    .d {
+        justify-content: space-between;
+    }
+</style>
+<script>
+    function href(link) {
+        location.href = link;
+    }
+</script>
     <script src="/js/plugins.js"></script>
     <script src="/js/main.js?<?=time();?>"></script>
 </body>

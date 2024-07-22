@@ -203,22 +203,9 @@
                                 </div>
                                 <div class="categories_menu_toggle" <?php if($_SERVER['REQUEST_URI'] !== "/") { echo 'style="display: none;"'; } ?>>
                                     <ul>
-                                        <li class="menu_item_children"><a href="#">Điện Thoại <i class="fa fa-angle-right"></i></a>
-                                            <ul class="categories_mega_menu">
-                                                <li class="menu_item_children"><a href="#">Iphone</a></li>
-                                                <li class="menu_item_children"><a href="#">SamSung</a></li>
-                                                <li class="menu_item_children"><a href="#">Vivo</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="menu_item_children"><a href="#">Phụ Kiện <i class="fa fa-angle-right"></i></a>
-                                            <ul class="categories_mega_menu">
-                                                <li class="menu_item_children"><a href="#">Sạc</a></li>
-                                                <li class="menu_item_children"><a href="#">Tai Nghe</a></li>
-                                                <li class="menu_item_children"><a href="#">Ốp Lưng</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#" id="more-btn"><i class="fa fa-plus" aria-hidden="true"></i> Xem Thêm</a></li>
+                                    <?php foreach($ManhDev->get_list("SELECT * FROM `categories` ORDER BY `id` DESC ") as $categories): ?>
+                                        <li class="menu_item_children"><a href="/pages/categories/php?code=<?=$categories['code'];?>"><?=$categories['name'];?> <i class="fa fa-angle-right"></i></a></li>
+                                        <?php endforeach; ?>
                                     </ul>
                                 </div>
                             </div>
@@ -241,7 +228,7 @@
                         </div>
                         <div class="col-md-2">
                             <div class="header_bigsale">
-                                <a href="#">TÀI KHOẢN</a>
+                                <a href="/profile/info">TÀI KHOẢN</a>
                             </div>
                         </div>
                     </div>

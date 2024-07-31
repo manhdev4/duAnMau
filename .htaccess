@@ -1,0 +1,9 @@
+RewriteEngine On
+ErrorDocument 404 /resources/404.php
+
+RewriteRule ^g$ /index.php [L,QSA]
+RewriteRule ^g/(.*)$ /index.php?action=$1 [L,QSA]
+RewriteRule ^administrators/(.*)$ /admin/index.php?action=$1 [L,QSA]
+
+RewriteRule ^api/client$ /app/client.php [L]
+RewriteRule ^api/admin$ /app/admin.php [L]

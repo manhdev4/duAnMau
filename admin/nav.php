@@ -1,209 +1,228 @@
-<nav id="sidebar" class="sidebar js-sidebar">
-	<div class="sidebar-content js-simplebar">
-		<a class="sidebar-brand" href="index.html">
-			<span class="align-middle">AdminKit</span>
-		</a>
+<nav class="main-header navbar navbar-expand navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/" class="nav-link">Trang Chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="//fb.com/lumanhgioi.vn" class="nav-link">Liên Hệ Kỹ Thuật</a>
+        </li>
+    </ul>
 
-		<ul class="sidebar-nav">
-			<li class="sidebar-header">
-				Pages
-			</li>
+    <ul class="navbar-nav ml-auto">
 
-			<li class="sidebar-item active">
-				<a class="sidebar-link" href="/admin">
-					<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Trang Chủ</span>
-				</a>
-			</li>
-
-			<li class="sidebar-item">
-				<a class="sidebar-link" href="/admin/members.php">
-					<i class="align-middle" data-feather="users"></i> <span class="align-middle">Quản Lý Thành Viên</span>
-				</a>
-			</li>
-
-			<li class="sidebar-item">
-				<a class="sidebar-link" href="/admin/categories.php">
-					<i class="align-middle" data-feather="file"></i> <span class="align-middle">Quản Lý Danh Mục</span>
-				</a>
-			</li>
-
-			<li class="sidebar-item">
-				<a class="sidebar-link" href="/admin/products.php">
-					<i class="align-middle" data-feather="file"></i> <span class="align-middle">Quản Lý Sản Phẩm</span>
-				</a>
-			</li>
-
-			<li class="sidebar-item">
-				<a class="sidebar-link" href="/admin/orders.php">
-					<i class="align-middle" data-feather="file"></i> <span class="align-middle">Quản Lý Đơn Hàng</span>
-				</a>
-			</li>
-		</ul>
-
-	</div>
+        <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+                <i class="far fa-comments"></i>
+                <span class="badge badge-danger navbar-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <a href="#" class="dropdown-item">
+                    <!-- Message Start -->
+                    <div class="media">
+                        <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                        <div class="media-body">
+                            <h3 class="dropdown-item-title">
+                                Brad Diesel
+                                <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                            </h3>
+                            <p class="text-sm">Call me whenever you can...</p>
+                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                        </div>
+                    </div>
+                    <!-- Message End -->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                    <!-- Message Start -->
+                    <div class="media">
+                        <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                        <div class="media-body">
+                            <h3 class="dropdown-item-title">
+                                John Pierce
+                                <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                            </h3>
+                            <p class="text-sm">I got your message bro</p>
+                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                        </div>
+                    </div>
+                    <!-- Message End -->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                    <!-- Message Start -->
+                    <div class="media">
+                        <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                        <div class="media-body">
+                            <h3 class="dropdown-item-title">
+                                Nora Silvester
+                                <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                            </h3>
+                            <p class="text-sm">The subject goes here</p>
+                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                        </div>
+                    </div>
+                    <!-- Message End -->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+            </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+                <i class="far fa-bell"></i>
+                <span class="badge badge-warning navbar-badge">15</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <span class="dropdown-item dropdown-header">15 Notifications</span>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                    <i class="fas fa-envelope mr-2"></i> 4 new messages
+                    <span class="float-right text-muted text-sm">3 mins</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                    <i class="fas fa-users mr-2"></i> 8 friend requests
+                    <span class="float-right text-muted text-sm">12 hours</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                    <i class="fas fa-file mr-2"></i> 3 new reports
+                    <span class="float-right text-muted text-sm">2 days</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                <i class="fas fa-th-large"></i>
+            </a>
+        </li>
+    </ul>
 </nav>
 
-<div class="main">
-	<nav class="navbar navbar-expand navbar-light navbar-bg">
-		<a class="sidebar-toggle js-sidebar-toggle">
-			<i class="hamburger align-self-center"></i>
-		</a>
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <a href="/administrators/home" class="brand-link text-center">
+        <span class="brand-text font-weight-light">QUẢN TRỊ VIÊN</span>
+    </a>
 
-		<div class="navbar-collapse collapse">
-			<ul class="navbar-nav navbar-align">
-				<li class="nav-item dropdown">
-					<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
-						<div class="position-relative">
-							<i class="align-middle" data-feather="bell"></i>
-							<span class="indicator">4</span>
-						</div>
-					</a>
-					<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
-						<div class="dropdown-menu-header">
-							4 New Notifications
-						</div>
-						<div class="list-group">
-							<a href="#" class="list-group-item">
-								<div class="row g-0 align-items-center">
-									<div class="col-2">
-										<i class="text-danger" data-feather="alert-circle"></i>
-									</div>
-									<div class="col-10">
-										<div class="text-dark">Update completed</div>
-										<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
-										<div class="text-muted small mt-1">30m ago</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" class="list-group-item">
-								<div class="row g-0 align-items-center">
-									<div class="col-2">
-										<i class="text-warning" data-feather="bell"></i>
-									</div>
-									<div class="col-10">
-										<div class="text-dark">Lorem ipsum</div>
-										<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
-										<div class="text-muted small mt-1">2h ago</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" class="list-group-item">
-								<div class="row g-0 align-items-center">
-									<div class="col-2">
-										<i class="text-primary" data-feather="home"></i>
-									</div>
-									<div class="col-10">
-										<div class="text-dark">Login from 192.186.1.8</div>
-										<div class="text-muted small mt-1">5h ago</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" class="list-group-item">
-								<div class="row g-0 align-items-center">
-									<div class="col-2">
-										<i class="text-success" data-feather="user-plus"></i>
-									</div>
-									<div class="col-10">
-										<div class="text-dark">New connection</div>
-										<div class="text-muted small mt-1">Christina accepted your request.</div>
-										<div class="text-muted small mt-1">14h ago</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="dropdown-menu-footer">
-							<a href="#" class="text-muted">Show all notifications</a>
-						</div>
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
-						<div class="position-relative">
-							<i class="align-middle" data-feather="message-square"></i>
-						</div>
-					</a>
-					<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown">
-						<div class="dropdown-menu-header">
-							<div class="position-relative">
-								4 New Messages
-							</div>
-						</div>
-						<div class="list-group">
-							<a href="#" class="list-group-item">
-								<div class="row g-0 align-items-center">
-									<div class="col-2">
-										<img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
-									</div>
-									<div class="col-10 ps-2">
-										<div class="text-dark">Vanessa Tucker</div>
-										<div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
-										<div class="text-muted small mt-1">15m ago</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" class="list-group-item">
-								<div class="row g-0 align-items-center">
-									<div class="col-2">
-										<img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
-									</div>
-									<div class="col-10 ps-2">
-										<div class="text-dark">William Harris</div>
-										<div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
-										<div class="text-muted small mt-1">2h ago</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" class="list-group-item">
-								<div class="row g-0 align-items-center">
-									<div class="col-2">
-										<img src="img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
-									</div>
-									<div class="col-10 ps-2">
-										<div class="text-dark">Christina Mason</div>
-										<div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
-										<div class="text-muted small mt-1">4h ago</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" class="list-group-item">
-								<div class="row g-0 align-items-center">
-									<div class="col-2">
-										<img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
-									</div>
-									<div class="col-10 ps-2">
-										<div class="text-dark">Sharon Lessman</div>
-										<div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
-										<div class="text-muted small mt-1">5h ago</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="dropdown-menu-footer">
-							<a href="#" class="text-muted">Show all messages</a>
-						</div>
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
-						<i class="align-middle" data-feather="settings"></i>
-					</a>
+    <div class="sidebar">
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item">
+                    <a href="/administrators/home" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>Trang Chủ</p>
+                    </a>
+                </li>
 
-					<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
-						<img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Charles Hall</span>
-					</a>
-					<div class="dropdown-menu dropdown-menu-end">
-						<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
-						<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
-						<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Log out</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav>
+                <li class="nav-item">
+                    <a href="/administrators/members" class="nav-link">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>Danh Sách Thành Viên</p>
+                    </a>
+                </li>
 
-	<main class="content">
-		<div class="container-fluid p-0">
+                <li class="nav-item">
+                    <a href="/administrators/orders" class="nav-link">
+                        <i class="nav-icon fa-solid fa-receipt"></i>
+                        <p>Danh Sách Đơn Hàng</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>
+                            Danh Mục & Sản Phẩm
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-folder nav-icon"></i>
+                                <p>
+                                    Danh Mục
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/administrators/addCategory" class="nav-link">
+                                        <i class="far fa-circle nav-icon" style="font-size: 10px"></i>
+                                        <p>Thêm Danh Mục</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/administrators/listCategory" class="nav-link">
+                                        <i class="far fa-circle nav-icon" style="font-size: 10px"></i>
+                                        <p>Danh Sách Danh Mục</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-brands fa-product-hunt nav-icon"></i>
+                                <p>
+                                    Sản Phẩm
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/administrators/addProduct" class="nav-link">
+                                        <i class="far fa-circle nav-icon" style="font-size: 10px"></i>
+                                        <p>Thêm Sản Phẩm</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/administrators/listProduct" class="nav-link">
+                                        <i class="far fa-circle nav-icon" style="font-size: 10px"></i>
+                                        <p>Danh Sách Sản Phẩm</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/administrators/news" class="nav-link">
+                        <i class="nav-icon fa-solid fa-blog"></i>
+                        <p>Danh Sách Tin Tức</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/administrators/members" class="nav-link">
+                        <i class="nav-icon fa-solid fa-image"></i>
+                        <p>Danh Sách Banner</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/administrators/members" class="nav-link">
+                        <i class="nav-icon fa-solid fa-cog"></i>
+                        <p>Cài Đặt Website</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+<div class="content-wrapper">
+    <div class="content-header"></div>
+    <section class="content">
+        <div class="container-fluid">
